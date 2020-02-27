@@ -1,10 +1,5 @@
 resource "random_pet" "this" {
   length = 2
-
-  //  # You can use keepers to seed randomness in your configs instead of running "terraform taint" every time :)
-  //  keepers = {
-  //    hash = filemd5("main.tf")
-  //  }
 }
 
 // S3 bucket is obviously well supported by both Terraform and Cloudformation, but still using it for the sake of the simplicity in this example. If you want to try a resource type which is supported just by AWS Cloudformation, try [AWS ManagedBlockchain](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/AWS_ManagedBlockchain.html)
@@ -24,6 +19,10 @@ resource "aws_cloudformation_stack" "this" {
 }
 EOF
 }
+
+//resource "aws_s3_bucket" "this" {
+//  bucket = random_pet.this.id
+//}
 
 output "this_cloudformation_stack_id" {
   value = aws_cloudformation_stack.this.id

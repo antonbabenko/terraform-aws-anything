@@ -6,7 +6,7 @@
 1. Supported by Terraform AWS provider - 1-terraform
 2. Supported only by AWS CloudFormation, but not by Terraform AWS provider - 2-cloudformation
 3. Supported by AWS SDK/CLI and not in AWS CloudFormation - 3-cli
-4. Partially supported by Terraform AWS provider (some arguments are not supported)
+4. Partially supported by Terraform AWS provider (some arguments are not supported) - 4-partial-terraform
 5. Not supported in AWS CLI/SDK. [Good luck with Selenium!](https://aws.amazon.com/about-aws/whats-new/2020/01/aws-device-farm-announces-desktop-browser-testing-using-selenium/)
 
 
@@ -24,6 +24,7 @@
 2. Refactoring states:
   - from/to module
   - to another state-file
+  - `terraform state list | grep -v module..... | xargs -Ixx terraform state rm xx`
 
 3. Migrate from AWS Cloudformation to Terraform
 
