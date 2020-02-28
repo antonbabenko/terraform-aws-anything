@@ -29,6 +29,6 @@
 3. Migrate from AWS Cloudformation to Terraform
 
 
-## More info
+## See also
 
-1. Talk "I Can’t Do This With Terraform, Now What?" by Patrick Conheady given at HashiTalks 2020. [See this repository](https://github.com/pacon-vib/tfcando).
+1. Talk "I Can’t Do This With Terraform, Now What?" by Patrick Conheady given at HashiTalks 2020. [See this repository](https://github.com/pacon-vib/tfcando) and [this recording](https://www.hashicorp.com/resources/i-can-t-do-this-with-terraform-now-what).
