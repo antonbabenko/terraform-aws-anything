@@ -7,7 +7,7 @@
 2. Supported only by AWS CloudFormation, but not by Terraform AWS provider - 2-cloudformation
 3. Supported by AWS SDK/CLI and not in AWS CloudFormation - 3-cli
 4. Partially supported by Terraform AWS provider (some arguments are not supported) - 4-partial-terraform
-5. Not supported in AWS CLI/SDK. [Good luck with Selenium!](https://aws.amazon.com/about-aws/whats-new/2020/01/aws-device-farm-announces-desktop-browser-testing-using-selenium/) :trollface: :trollface: :trollface:
+5. Not supported in AWS CLI/SDK. [Good luck with Selenium!](https://aws.amazon.com/about-aws/whats-new/2020/01/aws-device-farm-announces-desktop-browser-testing-using-selenium/) or take a look at [Ian's work with Puppeteer](https://github.com/iann0036/aws-account-controller) :trollface: :trollface: :trollface:
 
 
 ## Available solutions to manage AWS resources using Terraform include:
