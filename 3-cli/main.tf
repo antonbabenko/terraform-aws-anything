@@ -25,7 +25,7 @@ provider "shell" {}
 
 resource "shell_script" "aws_cli" {
   lifecycle_commands {
-    create = "${local.aws_cli_command} ec2 create-key-pair --key-name ${random_pet.this.id} >&3"
+    create = "${local.aws_cli_command} ec2 create-key-pair --key-name ${random_pet.this.id}" # >&3
     delete = "${local.aws_cli_command} ec2 delete-key-pair --key-name ${random_pet.this.id}"
 
     // read   = ""
